@@ -14,6 +14,12 @@
 	<p>Website : <a v-bind:href="website">Techadea</a></p>
 	<p><input type="text" v-bind:value="job"></p>
 	<p v-html="websitetag"></p>
+	<p><input type="text" v-model:value="name"></p>
+	<p>My age is {{ age }}</p>
+	<button v-on:click="add(1)">Add a Year</button>
+	<button v-on:click="substract(1)">Substract a Year</button>
+	<button v-on:dblclick="add(10)">Add 10 Years</button>
+	<button v-on:dblclick="substract(10)">Substract 10 Years</button>
 </div>
 
 <script type="text/javascript" src="app.js"></script>
