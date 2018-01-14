@@ -3,5 +3,10 @@ var app = new Vue({
 	data:{
 		name:'Tuhin',
 		job:'Techadea'
+	},
+	methods:{
+		greet:function(time){
+			return "Good" +" " + time + " " +this.name;
+		}
 	}
-})
+});
