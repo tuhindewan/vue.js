@@ -5,7 +5,9 @@ var app = new Vue({
 		job:'Techadea',
 		website:'http://www.techadea.com',
 		websitetag:'<a href="http://www.techadea.com">Techadea Website Tag</a>',
-		age:'25'
+		age:'25',
+		name2:'',
+		age2:''
 	},
 	methods:{
 		greet:function(time){
