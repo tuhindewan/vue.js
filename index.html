@@ -21,6 +21,11 @@
 	<button v-on:dblclick="substract(10)">Substract 10 Years</button>
 	<p>My age is {{ age }}</p>
 	<p><a v-on:click="click" href="http://www.techadea.com">Techadea It Solutions</a></p>
+	<h1>Keyboard Events</h1>
+	<label>Name:</label>
+	<input type="text" v-on:keyup.enter="logName">
+	<label>Age:</label>
+	<input type="text" v-on:keyup.alt.enter="logAge">
 </div>
 
 <script type="text/javascript" src="app.js"></script>

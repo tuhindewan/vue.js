@@ -11,14 +11,20 @@ var app = new Vue({
 		greet:function(time){
 			return "Good" +" " + time + " " +this.name;
 		},
-		add:function(inc){
-			this.age += inc;
-		},
-		substract:function(dec){
-			this.age -= dec;
-		},
+		add: function(inc){
+            this.age += inc;
+        },
+        substract: function(dec){
+            this.age -= dec;
+        },
 		click:function(){
 			alert("This link will take you to the company website");
+		},
+		logName:function(){
+			console.log('You entered your name');
+		},
+		logAge:function(){
+			console.log('You entered your age');
 		}
 	}
 });
