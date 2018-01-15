@@ -16,6 +16,9 @@ var app = new Vue({
 		},
 		substract:function(dec){
 			this.age -= dec;
+		},
+		click:function(){
+			alert("This link will take you to the company website");
 		}
 	}
 });
