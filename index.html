@@ -8,26 +8,12 @@
 <body>
 
 <div id="vue-app">
-	<h1>{{ greet('Afternoon') }}</h1>
-	<p>Name : {{ name }}</p>
-	<p>Job  : {{ job }}</p>
-	<p>Website : <a v-bind:href="website">Techadea</a></p>
-	<p><input type="text" v-bind:value="job"></p>
-	<p v-html="websitetag"></p>
-	<p><input type="text" v-model:value="name"></p>
-	<button v-on:click.once="add(1)">Add a Year</button>
-	<button v-on:click="substract(1)">Substract a Year</button>
-	<button v-on:dblclick="add(10)">Add 10 Years</button>
-	<button v-on:dblclick="substract(10)">Substract 10 Years</button>
-	<p>My age is {{ age }}</p>
-	<p><a v-on:click="click" href="http://www.techadea.com">Techadea It Solutions</a></p>
-	<h1>Keyboard Events</h1>
-	<label>Name:</label>
-	<input type="text" v-model="name2">
-	<span>{{ name2 }}</span>
-	<label>Age:</label>
-	<input type="text" v-model="age2">
-	<span>{{ age2 }}</span>
+	<button v-on:click="a++">Add To A</button>
+	<button v-on:click="b++">Add To B</button>
+	<p>A is - {{a}}</p>
+	<p>B is - {{b}}</p>
+	<p>Age + A is - {{addToA}}</p>
+	<p>Age + B is - {{addToB}}</p>
 </div>
 
 <script type="text/javascript" src="app.js"></script>
