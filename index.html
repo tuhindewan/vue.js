@@ -6,14 +6,15 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-
 <div id="vue-app">
-	<button v-on:click="a++">Add To A</button>
-	<button v-on:click="b++">Add To B</button>
-	<p>A is - {{a}}</p>
-	<p>B is - {{b}}</p>
-	<p>Age + A is - {{addToA}}</p>
-	<p>Age + B is - {{addToB}}</p>
+	<h1>Conditionals</h1>
+
+	<button v-on:click="error = !error">Toggle Error</button>
+	<button v-on:click="success = !success">Toggle Success</button>
+	<!-- <p v-if="error">There must be a error</p>
+	<p v-else-if="success">There must be a success</p> -->
+	<p v-show="error">There must ba e error</p>
+	<p v-show="success">There must ba e success</p>
 </div>
 
 <script type="text/javascript" src="app.js"></script>
