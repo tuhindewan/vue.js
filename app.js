@@ -1,8 +1,13 @@
 var app = new Vue({
 	el:'#vue-app',
 	data:{
-		error:false,
-		success:false,
+		languages:['Java','PHP','Dot Net','C++'],
+		programmers:
+		[
+			{name:"Tuhin",age:"25"},
+			{name:"Zinnah",age:"22"},
+			{name:"Partho",age:"23"}
+		]
 	},
 	methods:{
 		
