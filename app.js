@@ -1,16 +1,20 @@
 var app = new Vue({
 	el:'#vue-app',
 	data:{
-		languages:['Java','PHP','Dot Net','C++'],
-		programmers:
-		[
-			{name:"Tuhin",age:"25"},
-			{name:"Zinnah",age:"22"},
-			{name:"Partho",age:"23"}
-		]
+		health:100,
+		ended:false
 	},
 	methods:{
-		
+		punch:function(){
+			this.health -= 10;
+			if(this.health <= 0){
+				this.ended = true;
+			}
+		},
+		restart:function(){
+			this.health = 100;
+			this.ended = false;
+		}
 	},
 	computed:{
 		

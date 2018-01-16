@@ -7,13 +7,26 @@
 </head>
 <body>
 <div id="vue-app">
-	<h1>Looping using v-for</h1>
-	<ul>
-		<li v-for="(language,index) in languages"> {{index}}.{{ language }} </li>
-	</ul>
-	<ul>
-		<li v-for="(programmer,index) in programmers"> {{index}}.{{ programmer.name }} - {{ programmer.age }}</li>
-	</ul>
+	<!--bag image-->
+
+	<div id="bag" v-bind:class="{burst:ended}"></div>
+
+	<!--bag health-->
+
+	<div id="bag-health">
+		<div v-bind:style="{width:health + '%'}"></div>
+	</div>
+
+	<!--game controls-->
+
+	<div id="control">
+		<button v-on:click="punch" v-show="!ended">Punch</button>
+		<button v-on:click="restart">Restart</button>
+	</div>
+
+
+
+
 </div>
 
 <script type="text/javascript" src="app.js"></script>
