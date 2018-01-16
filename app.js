@@ -1,20 +1,38 @@
-var app = new Vue({
-	el:'#vue-app',
-	data:{
-		health:100,
-		ended:false
+Vue.component('greeting',{
+	template:'<div>Hello!! My name is {{name}} <button v-on:click="changeName">Change Name</button></div>',
+	data:function(){
+		return{
+			name:'tuhin'
+		}
 	},
 	methods:{
-		punch:function(){
-			this.health -= 10;
-			if(this.health <= 0){
-				this.ended = true;
-			}
-		},
-		restart:function(){
-			this.health = 100;
-			this.ended = false;
+		changeName:function(){
+			this.name = "Dewan";
 		}
+	}
+});
+
+
+var app = new Vue({
+	el:'#vue-app-one',
+	data:{
+		
+	},
+	methods:{
+
+	},
+	computed:{
+		
+	}
+});
+
+var app = new Vue({
+	el:'#vue-app-two',
+	data:{
+		
+	},
+	methods:{
+
 	},
 	computed:{
 		
